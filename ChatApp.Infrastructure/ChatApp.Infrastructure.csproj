@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.20.1" />
+      <PackageReference Include="Azure.Storage.Blobs" Version="12.27.0" />
+      <PackageReference Include="MailKit" Version="4.14.1" />
+      <PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="10.0.3" />
+      <PackageReference Include="MongoDB.Driver" Version="3.6.0" />
+      <PackageReference Include="StackExchange.Redis" Version="2.11.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ChatApp.Domain\ChatApp.Domain.csproj" />
+      <ProjectReference Include="..\ChatApp.SharedKernel\ChatApp.SharedKernel.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+</Project>

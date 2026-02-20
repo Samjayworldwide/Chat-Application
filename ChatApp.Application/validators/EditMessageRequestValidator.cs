@@ -1,0 +1,25 @@
+using ChatApp.SharedKernel.dtos.request;
+using FluentValidation;
+
+namespace ChatApp.Application.validators;
+
+public class EditMessageRequestValidator : AbstractValidator<EditMessageRequest>
+{
+    public EditMessageRequestValidator()
+    {
+        RuleFor(x => x.UserId)
+            .NotNull()
+            .NotEmpty()
+            .WithMessage("User Id is required.");
+
+        RuleFor(x => x.MessageId)
+            .NotNull()
+            .NotEmpty()
+            .WithMessage("Message Id is required.");
+
+        RuleFor(x => x.NewContent)
+            .NotNull()
+            .NotEmpty()
+            .WithMessage("New content is required.");
+    }
+}

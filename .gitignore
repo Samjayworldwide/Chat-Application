@@ -1,0 +1,26 @@
+# Build results
+bin/
+obj/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Visual Studio
+.vs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# User-specific files
+*.user
+*.suo
+
+# Secrets
+appsettings.Development.json
+appsettings.json
+.env
